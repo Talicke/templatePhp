@@ -15,10 +15,10 @@ echo $twig->render('navbar.html.twig');
     //test de la valeur $path dans l'URL et import de la ressource
     switch($path){
         //route /evalmvc/test -> ./test.php
-        case $path === "/TemplatePhp/" : 
+        case $path === "/templatephp/" : 
             include './ctrl/ctrl_showAllArticle.php';
             break ;
-        case $path === "/TemplatePhp/addArticle" :
+        case $path === "/templatephp/addArticle" :
             include './ctrl/ctrl_addArticle.php';
             break;
         default:
