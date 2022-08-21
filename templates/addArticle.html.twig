@@ -1,15 +1,10 @@
 {% extends 'main.html.twig' %}
 
+{% import 'form.html.twig' as form %}
+
 {% block content %}
     <form action="" method="post" class="w-50 m-auto">
-        <div class="mb-3">
-            <label for="titre" class="form-label">Titre : </label>
-            <input type="text" class="form-control" name="titreArticle" id="titreArticle">
-        </div>
-        <div class="mb-3">
-            <label for="contenu" class="form-label">Texte :</label>
-            <textarea name="texteArticle" class="form-control" id="texteArticle"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" name="ajouter">Ajouter</button>
-    </form>
+        {{form.input('titreArticle', 'Titre : ')}}
+        {{form.texteArea('texteArticle', 'Texte : ')}}
+        <button type="submit" class="btn btn-primary">Ajouter</button>
 {% endblock %}

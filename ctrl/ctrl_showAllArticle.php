@@ -20,7 +20,6 @@
     // }
 
     echo $twig->render('showAllArticle.html.twig', [
-        'name' => 'Kevin',
         'articles' => $articles
         ]);
 ?>
