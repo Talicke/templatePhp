@@ -2,9 +2,6 @@
 // include './view/view_header.html';
 include './utils/twig.php';
 
-echo $twig->render('main.html.twig');
-echo $twig->render('navbar.html.twig');
-
     //session start
     session_start();
     //Analyse de l'URL avec parse_url() et retourne ses composants
@@ -25,7 +22,4 @@ echo $twig->render('navbar.html.twig');
             include './ctrl/ctrl_showAllArticle.php';
 		    break ;
     }
-
-
-echo $twig->render('footer.html.twig');
 ?>
